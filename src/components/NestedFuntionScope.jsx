@@ -22,12 +22,10 @@ function NestedFunctionScope() {
   };
 
   return (
-    <div>
-      <h2>Nested Function Scope Example</h2>
-      {/* Botón para ejecutar la función externa */}
-      <button onClick={outerFunction}>Show Nested Message</button>
-      {/* Mensaje mostrado en pantalla */}
-      <p>{nestedMessage}</p>
+    <div className="nested-function-scope">
+      <h2 className="title">Nested Function Scope Example</h2>
+      <button className="btn" onClick={outerFunction}>Show Nested Message</button>
+      <p className="message">{nestedMessage}</p>
     </div>
   );
 }

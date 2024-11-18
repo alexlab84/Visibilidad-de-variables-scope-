@@ -13,12 +13,10 @@ function ScopeDemo() {
   };
 
   return (
-    <div>
-      <h2>Scope Example: Global vs Local</h2>
-      {/* Botón para ejecutar la función handleGlobalScope */}
-      <button onClick={handleGlobalScope}>Show Global Variable</button>
-      {/* Muestra el mensaje en pantalla */}
-      <p>{message}</p>
+    <div className="scope-demo">
+      <h2 className="title">Scope Example: Global vs Local</h2>
+      <button className="btn" onClick={handleGlobalScope}>Show Global Variable</button>
+      <p className="message">{message}</p>
     </div>
   );
 }

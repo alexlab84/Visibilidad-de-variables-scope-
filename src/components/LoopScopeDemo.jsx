@@ -23,13 +23,11 @@ function LoopScopeDemo() {
   };
 
   return (
-    <div>
-      <h2>Loop Scope Example</h2>
-      {/* Botones para ejecutar cada función */}
-      <button onClick={handleVarLoop}>Run Loop with var</button>
-      <button onClick={handleLetLoop}>Run Loop with let</button>
-      {/* Mensaje mostrado en pantalla */}
-      <p>{loopMessage}</p>
+    <div className="loop-scope-demo">
+      <h2 className="title">Loop Scope Example</h2>
+      <button className="btn" onClick={handleVarLoop}>Run Loop with var</button>
+      <button className="btn" onClick={handleLetLoop}>Run Loop with let</button>
+      <p className="message">{loopMessage}</p>
     </div>
   );
 }
